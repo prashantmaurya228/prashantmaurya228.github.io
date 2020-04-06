@@ -1,0 +1,298 @@
+/*    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+*/
+
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+/*********************************************** nav bar ******************************************/
+
+nav{
+	width: 100%;
+	z-index: 2;
+	height: 7rem;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	background-color: #0202023d;
+	position: fixed;
+
+}
+
+.nav-home {
+	width: 6rem;
+	margin-left: 2rem;
+}
+
+.nav-option{
+	font-size: 2rem;
+	padding: 0 1.5rem;
+}
+#logo-area{
+	display: flex;
+	align-items: center;
+}
+
+.option{
+	display: flex;
+	align-items: center;
+	font-family: 'Source Sans Pro', sans-serif;s
+}
+
+.option a{
+	text-decoration: none;
+	color: white;
+	transition: color .5s;
+}
+
+.option a:not(:last-child):hover {
+	color: orange;
+}
+
+.option a:last-child{
+	background-color: orange;
+	padding: 1rem;
+	border-radius: 25px;
+	margin-right: 2rem;
+}
+
+/***********************************************section - 1******************************************/
+
+#main{
+	height: 100vh;
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to top, #15151582, #4b5150b5),url(./assets/background1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.main-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+ width: 30rem;
+}
+
+
+
+.company-name{
+	font-family: 'Lobster', cursive;
+	font-size: 8rem;
+	color: #ffbe43;
+
+}
+
+.tagline{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
+	color: white;
+	padding: 3rem;
+}
+
+.main-content button {
+	border: none;
+	font-size: 2.5rem;
+	padding: 1rem 2.4rem;
+	border-radius: 25px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: orange;
+	transition: transform .6s;
+	box-shadow: 1px 1px 5px 2px #5b5a5a;
+}
+
+
+.main-content button:hover ,
+.main-content button:active {
+	transform: scale(1.15);
+
+}
+
+
+
+/***********************************************section - 2******************************************/
+#working {
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	background-color: wheat;
+}
+
+.working-head {
+	font-size: 6rem;
+	font-family: 'Hind Siliguri', sans-serif;
+	border-bottom: 5px solid orange;
+}
+
+.working-content  {
+	font-size: 4rem;
+	max-width: 80rem;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+
+/***********************************************why us******************************************/
+
+
+#whyus{
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	background-image:linear-gradient(to top, #15151582, #4b5150b5),url(./assets/background2.jpg);
+	color: white;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+.whyus-head {
+	margin-top: 1.2rem;
+	font-size: 6rem;
+	font-family: 'Hind Siliguri', sans-serif;
+	border-bottom: 5px solid orange;
+}
+
+#whyus p {
+	font-size: 4rem;
+	max-width: 80rem;
+	font-family: 'Fira Sans', sans-serif;	
+}
+
+.whyus-points p{
+	margin: 1.2rem;
+	text-align: center;
+}
+
+
+/***********************************************testimonial******************************************/
+
+
+
+
+#testimonial {
+	background-color: pink;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+}
+
+.testimonial-area img {
+	width: 7rem;
+}
+
+.testimonial-head{
+	font-size: 6rem;
+	font-family: 'Hind Siliguri', sans-serif;
+	border-bottom: 5px solid orange;
+}
+.card{
+	background-color: white;
+	max-width: 50rem;
+	box-shadow: 2px 2px 3px gray;
+}
+
+.testimonial-area{
+	display: flex;
+}
+
+.testimonial-area-cards{
+	margin: 1rem;
+}
+
+.card{
+	margin: 1.5rem;
+	border-radius: 2rem;
+	padding: 2rem;
+}
+
+.card img{
+	border-radius: 50%;
+}
+
+.name{
+	font-size: 2rem;
+	text-transform: uppercase;
+	float: right;
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+.card p:last-child {
+	color: black;
+	width: 90%;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+/***********************************************Footer******************************************/
+
+#footer{
+	background-color: black;
+	color: wheat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	font-size: 1.5rem;
+}
+
+
+.social-media {
+	width: 3rem;
+	margin: 1rem;
+
+	}
+
+.footer-area{
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+
+
+.links a{
+	display: block;
+	text-decoration: none;
+	color: grey;
+
+}
+
+.links a:hover{
+	color: white;
+	font-style: bold;
+
+}
+
+.social , .rights , .links {
+	padding: 1rem;
+}
+
